@@ -1,4 +1,4 @@
-import React from "react";
+2fimport React from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -9,6 +9,7 @@ import {
 import Users from "./user/pages/Users";
 import NewPlace from "./places/pages/NewPlace";
 import MainNavigation from "./shared/components/Navigation/MainNavigation";
+import UserPlace from "./places/pages/UserPlace";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
         <Switch>
           <Route path="/" exact>
             <Users />
+          </Route>
+          <Route path="/:userId/places">
+            <UserPlace />
           </Route>
           <Route path="/places/new" exact>
             <NewPlace />
@@ -30,3 +34,4 @@ function App() {
 }
 
 export default App;
+ß
