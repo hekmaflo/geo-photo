@@ -1,4 +1,4 @@
-2fimport React from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -34,4 +34,3 @@ function App() {
 }
 
 export default App;
-ß
